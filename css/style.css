@@ -1,21 +1,41 @@
+body
+{
+	background: -webkit-linear-gradient(#DBDBDB, #BCBCBC); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#DBDBDB, #BCBCBC); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#DBDBDB, #BCBCBC); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#DBDBDB, #BCBCBC); /* Standard syntax (must be last) */
+	height:100%; 
+}
+
 .footer
 {
     padding: 10px 10px 10px 10px;
-    align: center;
     font-family: verdana;
-    color: #A4A4A5;
+    color: #000000;
     font-weight: bold;
     font-size: 15px;
     position: fixed;
     bottom: 0;
-    left: 40%;
-    /*border:1px solid black;*/
+    left: 35%;
 }
 
 .yfTable
 {
     border-collapse: collapse;
     border:1px solid black;
+}
+
+.yfTopMenu
+{
+	background: -webkit-linear-gradient(#DBDBDB, #EDEDED); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#DBDBDB, #EDEDED); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#DBDBDB, #EDEDED); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#DBDBDB, #EDEDED); /* Standard syntax (must be last) */
+	-webkit-border-radius: 88px;
+	-moz-border-radius: 88px;
+	border-radius: 88px;
+	padding : 10px;
+	margin : 10px;
 }
 
 #gridTable

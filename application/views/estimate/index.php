@@ -22,7 +22,7 @@
                 <td><?php echo $estimate_item['feature']; ?></td>
                 <td align="center"><?php echo $estimate_item['dev_hours']; ?></td>
                 <td align="center"><?php echo $estimate_item['test_hours']; ?></td>
-                <td><textarea disabled='true' rows=4 cols=30><?php echo $estimate_item['comments']; ?></textarea></td>
+                <td><textarea style="color:black" disabled='true' rows=4 cols=30><?php echo $estimate_item['comments']; ?></textarea></td>
             </tr>
             <?php $item_no++; ?>
         <?php endforeach ?>

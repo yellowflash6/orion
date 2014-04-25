@@ -16,6 +16,7 @@
             );
             
             $this->db->insert('projects',$data);
+			redirect('/project/add/');
         }
         
         public function get_projects()

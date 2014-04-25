@@ -6,7 +6,11 @@
         <div>
             <?php echo validation_errors(); ?>
             <?php echo form_open("estimate/add_estimate"); ?>
-            <table align="center" border="1">
+            <table align="center" border="1" class="yfTable">
+            	<tr>
+                    <th>Project</th>
+                    <td><input type="text" value="" name="yf_project" /></td>
+                </tr>
                 <tr>
                     <th>Feature</th>
                     <td><input type="text" value="" name="yf_feature" /></td>

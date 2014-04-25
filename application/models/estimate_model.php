@@ -16,10 +16,11 @@
                 'dev_hours'     =>      $this->input->post('yf_dev_hours'),
                 'test_hours'    =>      $this->input->post('yf_test_hours'),
                 'comments'      =>      $this->input->post('yf_comments'),
-                'project_id'    =>      3
+                'project_id'    =>      $this->input->post('yf_project'),
             );
             
             $this->db->insert('estimates',$data);
+			redirect('/estimate/add/');
         }
         
         public function get_estimates($project_id)

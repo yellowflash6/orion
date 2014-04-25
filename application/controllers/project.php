@@ -20,10 +20,10 @@ class Project extends CI_Controller
     public function add()
     {
         $this->load->helper('form');
-	$this->load->library('form_validation');
-	$this->load->view('templates/yf_header');
+		$this->load->library('form_validation');
+		$this->load->view('templates/yf_header');
         $this->load->view('project/new');
-	$this->load->view('templates/yf_footer');
+		$this->load->view('templates/yf_footer');
     }
     
     public function add_project()

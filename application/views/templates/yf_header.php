@@ -23,5 +23,29 @@
         
         <!-- YF App Helper JS -->
         <script type="text/javascript" src="<?php echo base_url(); ?>js/grid/yfhelper.js"></script>
+        
+         <script>
+		$(function() {
+		$( "#yfTopMenu" ).menu();
+		});
+		</script>
+		<style>
+			.ui-menu { width: 150px; font-size:11px; }
+		</style>
+        
     </head>
     <body>
+    	<ul id="yfTopMenu">
+    		<li>
+    			<a href="#">Project</a>
+    			<ul>
+    				<li><a href="<?php echo base_url(); ?>project/new">Add Project</a></li>
+    			</ul>
+    		</li>
+    		<li>
+    			<a href="#">Estimate</a>
+    			<ul>
+    				<li><a href="<?php echo base_url(); ?>estimate/new">Add Estimate</a></li>
+    			</ul>
+    		</li>
+    	</ul>
