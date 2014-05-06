@@ -34,6 +34,17 @@
             return $query->result_array();
             
         }
+		
+		public function get_total_project_estimate($project_id)
+        {
+            $this->db->select_sum('dev_hours');
+            $this->db->select_sum('test_hours');
+			$query = $this->db->get_where('estimates', array('project_id' => $project_id));
+            
+            return $query->result_array();
+            
+        }
+		
     }
     
     
